@@ -1,0 +1,583 @@
+/* ОБЩИЕ СТИЛИ  */
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #041032;
+	background-color: #CBCFD4;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	transition: all 0.25s;
+}
+
+h1,
+h2,
+h3 {
+	text-align: center;
+	margin-bottom: 20px;
+	align-items: center;
+	margin-top: 20px;
+	background: linear-gradient(#08f6e2, #A154F2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #11e8f0;
+}
+
+.mt0 {
+	margin-top: 0 !important;
+}
+
+
+/* Форма состава */
+
+.dakisvan {
+	background: #04e4e4;
+	border-radius: 3px;
+	color: #30363D;
+	display: inline-block;
+	font-size: 15px;
+	padding: 10px 20px;
+	text-decoration: none;
+	text-align: center;
+	min-width: 60px;
+	position: relative;
+	transition: color .1s ease;
+}
+
+.dakisvan:hover {
+	background: #d01734;
+}
+
+.dakisvan.valokan-big {
+	font-size: 18px;
+	padding: 15px 20px;
+	min-width: 100px;
+}
+
+.valokan-close {
+	color: #09defa;
+	font-size: 30px;
+	text-decoration: none;
+	padding: 10px;
+	position: absolute;
+	right: 7px;
+	top: 0;
+}
+
+.valokan-close:hover {
+	color: #333;
+}
+
+.kadobagud:before {
+	content: "";
+	display: none;
+	background: rgb(0 0 0 / 77%);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+.midsalod:before {
+	display: block;
+}
+
+.midsalod .angebes-koverla {
+	transform: translate(0, 0);
+	top: 20%;
+}
+
+.angebes-koverla {
+	background: #fefefe;
+	border: #232222 solid 0px;
+	border-radius: 5px;
+	margin-left: -200px;
+	text-align: center;
+	position: fixed;
+	left: 50%;
+	top: -100%;
+	z-index: 11;
+	width: 450px;
+	box-shadow: 0 5px 10px rgba(25, 24, 24, 0.3);
+	transform: translate(0, -500%);
+	transition: transform 0.3s ease-out;
+}
+
+.davasgu-kevanud {
+	padding: 10px;
+}
+
+.davasgu-kevanud p {
+	font-size: 16px;
+}
+.davasgu-kevanud input {
+	width: 200px;
+	padding: 8px;
+	border: 1px solid #ddd;
+	color: #888;
+	outline: 0;
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.doveacko-gangeroun,
+.kusane-avasgun {
+	padding: 10px 20px;
+}
+
+.doveacko-gangeroun {
+	border-bottom: white 1px;
+}
+
+.doveacko-gangeroun h2 {
+	font-size: 20px;
+}
+
+
+
+/* Меню */
+.navbars {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbars a {
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdownz {
+    display: inline-block;
+}
+
+.dropdownz .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbars a:hover, .dropdown:hover .dropbtn {
+    background-color: #262829;
+}
+
+.dropdown-content {
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 133px;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdownz:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+/* Шапка */
+
+header {
+	background-color: #30363D;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 15px 0;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+
+/* секция Главная */
+
+.glavn {
+	position: relative;
+	background-image: url(img/assorti.jpg);
+	height: 100vh;
+	background-position: center top;
+	padding-top: 16%;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+.glavn:before {
+	content: "";
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.90));
+}
+
+.title {
+	font-size: 60px;
+	color: #fff;
+	font-weight: 900;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.adresa {
+	font-size: 18px;
+	margin-top: 20px;
+	color: #fff;
+}
+
+
+/* секция О нас */
+
+.about {
+	margin: auto;
+	position: relative;
+	background: #ededed;
+	padding-bottom: 80px;
+}
+
+.image {
+	height: 60vh;
+	width: 100%;
+	background: url(img/article.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.sef {
+	background-image: url(img/foto.jpg);
+	border-radius: 100px;
+	width: 160px;
+	height: 170px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 2px solid #fff;
+	position: absolute;
+	top: -82px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+.name {
+	padding-top: 70px;
+	margin-bottom: 0;
+}
+
+.descr {
+	font-size: 18px;
+}
+
+.block {
+	position: relative;
+	padding: 70px 90px 63px 90px;
+	color: white;
+	background: #30363D;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.block p {
+	font-size: 20px;
+	line-height: 1.55;
+}
+
+.block p span {
+	font-size: 16px;
+	line-height: 1.55;
+}
+
+.icon {
+	position: absolute;
+	color: white;
+	left: 47px;
+	top: 36px;
+	font-family: Arial;
+	font-size: 114px;
+	line-height: 1;
+}
+
+
+/* секция Меню */
+
+.menu {
+	position: relative;
+	padding-bottom: 80px;
+}
+
+.meni {
+	padding: 45px 0;
+	font-size: 42px;
+	line-height: 1.23;
+	background-color: #30363D;
+	color: white;
+	margin: 0;
+	font-weight: 600;
+	margin-bottom: 40px;
+	margin-top: 50px;
+}
+
+.service {
+	background: white;
+}
+
+.service img {
+	max-width: 100%;
+	object-fit: cover;
+	width: 100%;
+	height: 330px;
+}
+
+.texts {
+	padding: 25px;
+	color: white;
+	background-color: #30363D;
+}
+
+.service h4 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.35;
+}
+
+.butt {
+	color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height: 45px;
+	font-size: 14px;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 45px;
+	text-align: center;
+	width: 120px;
+	cursor: pointer;
+	font-weight: 600;
+	background: linear-gradient(#08f6e2, #A154F2);
+}
+
+.butt:hover {
+	color: rgb(248, 248, 248);
+	background: rgb(255, 0, 0);
+	background: linear-gradient(90deg, rgb(174, 0, 255) 0%, rgb(240, 130, 67) 55%, rgba(255, 157, 157, 1) 100%);
+}
+
+.service p {
+	font-size: 15px;
+	margin-bottom: 0;
+	min-height: 75px;
+}
+
+.price {
+	font-size: 20px;
+	font-weight: 600;
+	padding: 8px 0;
+}
+
+.pt {
+	padding-top: 10px;
+}
+
+.pt35 {
+	padding-top: 35px;
+}
+
+
+/* секция Контакты */
+
+.contacts {
+	position: relative;
+	padding: 80px 0;
+	background: #fff
+}
+
+.black {
+	color: #000;
+	width: 100%;
+}
+
+ul {
+	list-style-type: square;
+	background: #ededed;
+	padding: 30px;
+	font-size: 18px;
+	line-height: 1.55;
+	padding-left: 40px;
+}
+
+ul li {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed #30363D;
+}
+
+ul li:last-child {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	border-bottom: none;
+}
+
+
+/* // Подвал */
+
+.footer {
+	position: relative;
+	padding: 20px 0;
+	background-color: #30363D;
+	color: white;
+}
+
+.footer p {
+	font-size: 15px;
+	font-weight: 300;
+}
+
+
+/*  Медиа-запросы */
+
+@media (max-width:767px) {
+	.glavn {
+		padding-top: 50%;
+		height: 595px;
+	}
+	.title {
+		font-size: 35px;
+	}
+	.text-right {
+		text-align: center!important;
+	}
+	.text-left {
+		text-align: center!important;
+	}
+	.menuitem a {
+		display: inline-block;
+		padding: 14px 5px;
+		font-size: 16px;
+		line-height: 18px;
+		float:none;
+	}
+	.image {
+		height: 25vh;
+	}
+	.block {
+		padding: 40px;
+		max-width: 100%;
+		margin: 20px;
+	}
+	.icon {
+		position: absolute;
+		left: 15px;
+		top: 15px;
+		font-family: Arial;
+		font-size: 80px;
+		line-height: 1;
+	}
+	.block p {
+		font-size: 16px;
+		line-height: 1.55;
+	}
+	.service img {
+		height: 230px;
+	}
+	.texts {
+		padding: 20px;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.service p {
+		min-height: auto;
+	}
+	.butt {
+		margin: 0 auto;
+	}
+	.pt35 {
+		padding-top: 0px;
+	}
+	.meni {
+		padding: 30px 0;
+		font-size: 30px;
+		margin-bottom: 20px;
+		margin-top: 25px;
+	}
+	ul {
+		padding: 15px;
+		padding-left: 40px;
+	}
+	.mt20 {
+		margin-top: 20px;
+	}
+	.contacts {
+		padding: 40px 0;
+	}
+	.menu {
+		padding-bottom: 40px;
+	}
+	.about {
+		padding-bottom: 40px;
+	}
+	.angebes-koverla {
+		margin-left: -140px;
+		width: 280px;
+	}
+	.adresa {
+		font-size: 21px;
+		padding: 0 30px;
+		margin-top: 20px;
+		color: white;
+	}
+	
+.dropdown-content {
+    width: 122px;
+    margin-top: 0px;
+}
+	
+	
+	
+	
+}
