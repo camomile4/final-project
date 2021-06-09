@@ -17,11 +17,11 @@ for (var i = 0; i < links.length; i++) {
 
 $('.butt').click(function (e) {
   e.preventDefault();
-  $('.kadobagud').addClass('midsalod');
+  $('.modalWindow').addClass('replacement');
   });
 $('.closemodal').click(function (e) {
   e.preventDefault();
-  $('.kadobagud').removeClass('midsalod');
+  $('.modalWindow').removeClass('replacement');
   });
   
   
