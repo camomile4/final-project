@@ -33,10 +33,10 @@ h3 {
 	margin-bottom: 20px;
 	align-items: center;
 	margin-top: 20px;
-	background: linear-gradient(#08f6e2, #A154F2);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: #11e8f0;
+	/* background: linear-gradient(#15a8a1, #631dad);
+	-webkit-background-clip: text; 
+	 -webkit-text-fill-color: transparent; */
+	color: black
 }
 
 .mt0 {
@@ -49,7 +49,7 @@ h3 {
 
 
 .modalWindow-close {
-	color: white;
+	color: black;
 	font-size: 30px;
 	text-decoration: none;
 	padding: 10px;
@@ -85,7 +85,7 @@ h3 {
 
 .ingredients {
 	background: #fefefe;
-	background: linear-gradient(#08f6e2, #A154F2);
+	/* background: linear-gradient(#2e4261, #232629); */
 	border: #232222 solid 0px;
 	border-radius: 5px;
 	margin-left: -200px;
@@ -102,13 +102,14 @@ h3 {
 
 .ingredients-text {
 	padding: 10px;
-	color: white;
-	
+	color: black;
+
 }
 
 .ingredients-text p {
 	font-size: 16px;
 }
+
 .ingredients-text input {
 	width: 200px;
 	padding: 8px;
@@ -120,11 +121,10 @@ h3 {
 	margin-top: 10px;
 }
 
-.ingredients-title
- {
+.ingredients-title {
 	padding: 10px 20px;
 
-	
+
 }
 
 .ingredients-title {
@@ -133,69 +133,70 @@ h3 {
 
 .ingredients-title h2 {
 	font-size: 20px;
-	
+
 }
 
 
 
 /* Меню */
 .navbars {
-    overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+	overflow: hidden;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbars a {
-    display: inline-block;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 
 .dropdownz {
-    display: inline-block;
+	display: inline-block;
 }
 
 .dropdownz .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: white;
+	padding: 14px 16px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
 }
 
-.navbars a:hover, .dropdown:hover .dropbtn {
-    background-color: #262829;
+.navbars a:hover,
+.dropdown:hover .dropbtn {
+	background-color: #262829;
 }
 
 .dropdown-content {
 	display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 133px;
-    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
-    z-index: 1;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 133px;
+	box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+	z-index: 1;
 }
 
 .dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+	background-color: #ddd;
 }
 
 .dropdownz:hover .dropdown-content {
-    display: block;
+	display: block;
 }
 
 
@@ -226,6 +227,8 @@ header {
 	padding-top: 16%;
 	text-align: center;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .navigation:before {
@@ -246,7 +249,7 @@ header {
 	text-transform: uppercase;
 }
 
-.adresa {
+.address {
 	font-size: 18px;
 	margin-top: 20px;
 	color: #fff;
@@ -334,7 +337,7 @@ header {
 	padding-bottom: 80px;
 }
 
-.meni {
+.menuTitle {
 	padding: 45px 0;
 	font-size: 42px;
 	line-height: 1.23;
@@ -383,13 +386,13 @@ header {
 	width: 120px;
 	cursor: pointer;
 	font-weight: 600;
-	background: linear-gradient(#08f6e2, #A154F2);
+	background: linear-gradient(#1c779b, #631dad);
 }
 
 .butt:hover {
 	color: rgb(248, 248, 248);
 	background: rgb(255, 0, 0);
-	background: linear-gradient(90deg, rgb(174, 0, 255) 0%, rgb(240, 130, 67) 55%, rgba(255, 157, 157, 1) 100%);
+	background: linear-gradient(#15a8a1, #631dad);
 }
 
 .service p {
@@ -470,30 +473,37 @@ ul li:last-child {
 		padding-top: 50%;
 		height: 595px;
 	}
+
 	.title {
 		font-size: 35px;
 	}
+
 	.text-right {
-		text-align: center!important;
+		text-align: center !important;
 	}
+
 	.text-left {
-		text-align: center!important;
+		text-align: center !important;
 	}
+
 	.menuitem a {
 		display: inline-block;
 		padding: 14px 5px;
 		font-size: 16px;
 		line-height: 18px;
-		float:none;
+		float: none;
 	}
+
 	.image {
 		height: 25vh;
 	}
+
 	.block {
 		padding: 40px;
 		max-width: 100%;
 		margin: 20px;
 	}
+
 	.icon {
 		position: absolute;
 		left: 15px;
@@ -502,66 +512,80 @@ ul li:last-child {
 		font-size: 80px;
 		line-height: 1;
 	}
+
 	.block p {
 		font-size: 16px;
 		line-height: 1.55;
 	}
+
 	.service img {
 		height: 230px;
 	}
+
 	.texts {
 		padding: 20px;
 		text-align: center;
 		margin-bottom: 15px;
 	}
+
 	.service p {
 		min-height: auto;
 	}
+
 	.butt {
 		margin: 0 auto;
 	}
+
 	.pt35 {
 		padding-top: 0px;
 	}
-	.meni {
+
+	.menuTitle {
 		padding: 30px 0;
 		font-size: 30px;
 		margin-bottom: 20px;
 		margin-top: 25px;
 	}
+
 	ul {
 		padding: 15px;
 		padding-left: 40px;
 	}
+
 	.mt20 {
 		margin-top: 20px;
 	}
+
 	.contacts {
 		padding: 40px 0;
 	}
+
 	.menu {
 		padding-bottom: 40px;
 	}
+
 	.about {
 		padding-bottom: 40px;
 	}
+
 	.ingredients {
 		margin-left: -140px;
 		width: 280px;
 	}
-	.adresa {
+
+	.address {
 		font-size: 21px;
 		padding: 0 30px;
 		margin-top: 20px;
 		color: white;
 	}
-	
-.dropdown-content {
-    width: 122px;
-    margin-top: 0px;
-}
-	
-	
-	
-	
+
+	.dropdown-content {
+		width: 122px;
+		margin-top: 0px;
+	}
+
+
+
+
 }
